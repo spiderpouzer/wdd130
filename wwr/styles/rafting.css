@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFFDFA; /* Baby Powder */
+    --secondary-color: #3B3A3A; /* Jet */
+    --accent1-color: #FFF7EB; /* Old Lace */
+    --accent2-color: #1A1A1B; /* Eerie Black */
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFDFA;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li {
+    margin: 15px 0;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFFDFA;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FFD700;
+    background-color: var(--accent2-color);
+}
+
+/* Main content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.hero {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    position: relative; 
+    padding: 0;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    margin-top: 15px;
+    position: absolute; 
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: var(--primary-color); 
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px var(--accent2-color);
+}
+
+.hero article {
+    position: absolute; /* Posiciona o article sobre a imagem */
+    bottom: 10%; /* Ajuste da posição vertical */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza em relação ao ponto de referência */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 70%; /* Define uma largura proporcional */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero article img {
+    width: 50px;
+    height: 50px;
+    float: right; 
+    margin-left: 10px; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+.hero article p {
+    color: var(--primary-color);
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#description h3 {
+    margin-bottom: 10px;
+    color: #3B3B58;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#description p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+#adventure {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#adventure h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color: #3B3B58;
+    margin-bottom: 20px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 2px solid var(--accent1-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.adventure-gallery img:hover {
+    transform: scale(1.1);
+    border-color: var(--accent2-color);
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
