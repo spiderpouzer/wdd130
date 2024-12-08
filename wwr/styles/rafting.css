@@ -210,3 +210,139 @@ footer .social-icons img {
 footer .social-icons img:hover {
     transform: scale(1.2);
 }
+
+.google-map {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+.employee-profiles {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.employee-profiles h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.profile {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.employee-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form fieldset {
+    border: none;
+    margin: 15px 0;
+}
+
+.contact-form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.company-info {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+}
+
+.company-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.company-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.map {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; /* Centraliza o mapa */
+}
+
+.google-map {
+    width: 600px;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
